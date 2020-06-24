@@ -4,7 +4,9 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Visual */
-  background-image: url("../imgs/ignasi_pattern_s.png");
+  background-image: url("../imgs/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 html {
@@ -22,7 +24,7 @@ main {
 
 /* create styles for use for all white main boxes */
 .block {
-  background-color: #fff;
+  background-color: #edf2f6;
 
   padding: 30px;
   margin-bottom: 30px;
@@ -30,7 +32,7 @@ main {
 
 .block-header {
   /* Typography */
-  color: #4aaaa5;
+  color: #5e5768;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
 }
@@ -42,26 +44,26 @@ main {
   /* Typography */
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: #edf2f6;
 
   /* Visual */
-  background: #4aaaa5;
+  background: #5e5768;
 }
 
 /* override bootstrap hover color and border */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #4aaaa5;
+  color: #5465ff;
 }
 
 .navbar {
-  background: white;
+  background: #3a445D;
   border: none;
 }
 
 /* media query for nav background color change */
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: #4aaaa5;
+    background-color: #5465ff;
   }
 }
 /* END NAV */
@@ -117,7 +119,7 @@ main {
   padding-top: 3px;
 
   /* Visual */
-  background-color: #4aaaa5;
+  background-color: #5465ff;
 }
 /* END FOOTER */
 /* --- END STYLES FOR ALL PAGES --- */
@@ -132,7 +134,7 @@ main {
   /* Typography */
   font-size: 32px;
   font-weight: bold;
-  color: #4aaaa5;
+  color: #5465ff;
 }
 
 #about-image {
@@ -173,7 +175,7 @@ main {
   color: #fff;
 
   /* Visual */
-  background-color: #4aaaa5;
+  background-color: #5465ff;
   border: 0;
 }
 
