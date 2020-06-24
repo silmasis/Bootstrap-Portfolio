@@ -1,21 +1,34 @@
 /* --- STYLES FOR ALL PAGES --- */
-body {
+body, html {
+  margin: 0;
+  padding: 0;
   /* Typography */
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
+  text-align: center;
   /* Visual */
+  height: 100%;
+}
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
   background-image: url("../imgs/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-html {
-  /* Positioning */
-  position: relative;
-
-  /* Box-model */
+.bgimg-1 {
   min-height: 100%;
 }
+
+.bgimg-2, .bgimg-3 {
+  min-height: 400px;
+}
+
 
 /* add space for fixed nav */
 main {
@@ -25,9 +38,8 @@ main {
 /* create styles for use for all white main boxes */
 .block {
   background-color: #edf2f6;
-
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 50px 80px;
+  text-align: justify;
 }
 
 .block-header {
@@ -38,6 +50,14 @@ main {
 }
 
 /* NAV START */
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 15%;
+
+}
+
 #logo {
   font-family: Georgia, Times, "Times New Roman", serif;
 
@@ -47,54 +67,45 @@ main {
   color: #edf2f6;
 
   /* Visual */
-  background: #5e5768;
+  width: 30%;
+  float: left;
+  line-height: 50px;
 }
 
 /* override bootstrap hover color and border */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #5465ff;
+  color: #cddff5;
 }
 
 .navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background: #3a445D;
   border: none;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
+
+.nav-link {
+  /* Visual */
+  color: #edf2f6;
+  border: 0;
 }
 
 /* media query for nav background color change */
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: #5465ff;
+    background-color: #3a445d;
   }
 }
 /* END NAV */
 
-
-/* CONNECT W/ ME CSS */
-.connect-header {
-  /* Typography */
-  font-size: 25px;
-}
-
-.connect-photo {
-  /* Box-model */
-  width: 55px;
-  height: 55px;
-}
-
-#images {
-  /* Box-model */
-  padding-top: 15px;
-
-  /* Typography */
-  text-align: center;
-}
-/* END CONNECT W/ ME */
-
-
 /* BEGIN FOOTER */
-.footer {
+footer {
   /* Positioning */
-  position: absolute;
   bottom: 0;
 
   /* Box-model */
@@ -102,7 +113,8 @@ main {
   height: 60px;
 
   /* Visual */
-  background-color: #666;
+  background-color: #3a445a;
+  color: #edf2f6;
 }
 
 .text-muted-footer {
@@ -125,22 +137,25 @@ main {
 /* --- END STYLES FOR ALL PAGES --- */
 
 /* --- PAGE-SPECIFIC STYLES --- */
-/* ABOUT-ME PAGE */
-.about-me-header {
-  /* Positioning */
-  margin-bottom: 33px;
-  font-family: Georgia, Times, "Times New Roman", serif;
 
-  /* Typography */
-  font-size: 32px;
-  font-weight: bold;
-  color: #5465ff;
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
 }
 
-#about-image {
-  /* Positioning */
-  float: left;
+.caption span.border {
+  background-color: #3A445D;
+  color: #edf2f6;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
 
+/* ABOUT-ME PAGE */
+#about-image {
   /* Box-model */
   width: 200px;
   margin: 0 20px 10px 0;
@@ -150,7 +165,8 @@ main {
 
 /* PORTFOLIO PAGE */
 .port-image {
-  margin: 20px auto;
+  margin:0 20px 10px 0;
+  width: 100%;
 }
 /* END PORTFOLIO PAGE */
 
@@ -172,10 +188,10 @@ main {
   font-weight: lighter;
 
   /* Typography */
-  color: #fff;
+  color: #edf2f6;
 
   /* Visual */
-  background-color: #5465ff;
+  background-color: #558c8c;
   border: 0;
 }
 
