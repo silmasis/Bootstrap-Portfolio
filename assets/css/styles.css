@@ -1,5 +1,6 @@
 /* --- STYLES FOR ALL PAGES --- */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   /* Typography */
@@ -11,7 +12,9 @@ body, html {
 
 
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
   position: relative;
   opacity: 0.65;
   background-image: url("../imgs/background.jpg");
@@ -25,8 +28,9 @@ body, html {
   min-height: 100%;
 }
 
-.bgimg-2, .bgimg-3 {
-  min-height: 400px;
+.bgimg-2,
+.bgimg-3 {
+  min-height: 50%;
 }
 
 
@@ -37,9 +41,10 @@ main {
 
 /* create styles for use for all white main boxes */
 .block {
-  background-color: #edf2f6;
-  padding: 50px 80px;
+  background-color: white;
+  padding: 100px;
   text-align: justify;
+  height: 100%;
 }
 
 .block-header {
@@ -50,8 +55,10 @@ main {
 }
 
 /* NAV START */
-.nav {
+nav ul li a {
   display: flex;
+  color: #edf2f6;
+  padding: 0 20px;
   justify-content: right;
   list-style: none;
   margin-right: 15%;
@@ -73,7 +80,7 @@ main {
 }
 
 /* override bootstrap hover color and border */
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav>li>a:hover {
   color: #cddff5;
 }
 
@@ -89,11 +96,6 @@ main {
   z-index: 1;
 }
 
-.nav-link {
-  /* Visual */
-  color: #edf2f6;
-  border: 0;
-}
 
 /* media query for nav background color change */
 @media only screen and (max-width: 767px) {
@@ -101,6 +103,7 @@ main {
     background-color: #3a445d;
   }
 }
+
 /* END NAV */
 
 /* BEGIN FOOTER */
@@ -117,22 +120,6 @@ footer {
   color: #edf2f6;
 }
 
-.text-muted-footer {
-  /* Box-model */
-  margin-top: 15px;
-
-  /* Typography */
-  color: #fff;
-}
-
-.two-toned-footer-color {
-  /* Box-model */
-  height: 6px;
-  padding-top: 3px;
-
-  /* Visual */
-  background-color: #5465ff;
-}
 /* END FOOTER */
 /* --- END STYLES FOR ALL PAGES --- */
 
@@ -160,14 +147,16 @@ footer {
   width: 200px;
   margin: 0 20px 10px 0;
 }
+
 /* END ABOUT-ME PAGE */
 
 
 /* PORTFOLIO PAGE */
-.port-image {
-  margin:0 20px 10px 0;
-  width: 100%;
+.port-image a{
+  margin: 0 20px 10px 0;
+  width: 200px;
 }
+
 /* END PORTFOLIO PAGE */
 
 
