@@ -152,7 +152,11 @@ footer {
 
 
 /* PORTFOLIO PAGE */
-
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  margin: 0 20px 10px 0;
+}
 
 /* END PORTFOLIO PAGE */
 
